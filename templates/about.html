@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport"    content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author"      content="Sergey Pozhilov (GetTemplate.com)">
+	
+	<title>ALL CNN Classifier</title>
+
+	<link rel="shortcut icon" href="{{ url_for('static',filename='assets/images/gt_favicon.png') }}">
+	<link rel="stylesheet" media="screen" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
+	<link rel="stylesheet" href="{{ url_for('static',filename='assets/css/bootstrap.min.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static',filename='assets/css/font-awesome.min.css') }}">
+
+	<!-- Custom styles for our template -->
+	<link rel="stylesheet" href="{{ url_for('static',filename='assets/css/bootstrap-theme.css') }}" media="screen" >
+	<link rel="stylesheet" href="{{ url_for('static',filename='assets/css/main.css') }}">
+
+	<script src="{{ url_for('static',filename='assets/js/html5shiv.js') }}"></script>
+	<script src="{{ url_for('static',filename='assets/js/respond.min.js') }}"></script>
+
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+	<style media="screen"></style>
+
+	<![endif]-->
+</head>
+
+<body>
+	<!-- Fixed navbar -->
+	<div class="navbar navbar-inverse navbar-fixed-top headroom" >
+		<div class="container">
+			<div class="navbar-header">
+				<!-- Button for smallest screens -->
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+				<a class="navbar-brand" href="/"><img src="{{ url_for('static',filename='assets/images/logo.png') }}" alt="Progressus HTML5 template"></a>
+			</div>
+			<div class="navbar-collapse collapse">
+				<ul class="nav navbar-nav pull-right">
+					<li><a href="/">Home</a></li>
+					<li class="active"><a href="#">About</a></li>
+				</ul>
+			</div><!--/.nav-collapse -->
+		</div>
+	</div> 
+	<!-- /.navbar -->
+
+	<header id="head" class="secondary"></header>
+
+	<!-- container -->
+	<div class="container">
+
+		<ol class="breadcrumb">
+			<li><a href="/">Home</a></li>
+			<li class="active">About</li>
+		</ol>
+
+		<div class="row">
+			
+			<!-- Article main content -->
+			<article class="col-sm-8 maincontent">
+				<header class="page-header">
+					<h1 class="page-title">About us</h1>
+				</header>
+
+			</article>
+			<!-- /Article -->
+
+
+		</div>
+	</div>	<!-- /container -->
+	
+	<div class="main">
+        <div class="profile-card">
+            <div class="img">
+                <img src="{{ url_for('static',filename='assets/images/wafiya_pic.jpeg') }}">
+            </div>
+            <div class="caption">
+                <h3>Wafiya Sohail</h3>
+                <p>Team Member</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="profile-card">
+            <div class="img">
+                <img src="{{ url_for('static',filename='assets/images/luqman_pic.jpeg') }}">
+            </div>
+            <div class="caption">
+                <h3>Muhammad Luqman</h3>
+                <p>Team Member</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="profile-card">
+            <div class="img">
+                <img src="{{ url_for('static',filename='assets/images/farhan_pic.jpeg') }}">
+            </div>
+            <div class="caption">
+                <h3>Farhan Shoukat</h3>
+                <p>Team Member</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+	<footer id="footer" class="top-space">
+
+		<div class="footer1">
+			<div class="container">
+				<div class="row">
+					
+					<div class="col-md-3 widget">
+						<h3 class="widget-title">Contact</h3>
+						<div class="widget-body">
+							<p>+92 311 5289656<br>
+								<a href="mailto:#">itsluqman55@gmail.com</a><br>
+								<br>
+								Sir Syed CASE Institute of Technology, B-17, Islamabad
+							</p>	
+						</div>
+					</div>
+
+
+					<div class="col-md-6 widget">
+						<h3 class="widget-title">Trio</h3>
+						<div class="widget-body">
+							<p>A group of slackers with high goals and low exhaustion threshold. We're here to learn, outperform and showcase skills. To be the best, the most effecient and the most effective group ever.</p>
+							<p>It's still a long road to our success. See you on the other side!</p>
+						</div>
+					</div>
+
+				</div> <!-- /row of widgets -->
+			</div>
+		</div>
+
+		<div class="footer2">
+			<div class="container">
+				<div class="row">
+
+					<div class="col-md-6 widget">
+						<div class="widget-body">
+							<p class="simplenav">
+								<a href="/">Home</a> |
+								<a href="#">About</a>
+							</p>
+						</div>
+					</div>
+
+					<div class="col-md-6 widget">
+						<div class="widget-body">
+							<p class="text-right">
+								Copyright &copy; 2021, Trio
+							</p>
+						</div>
+					</div>
+
+				</div> <!-- /row of widgets -->
+			</div>
+		</div>
+
+	</footer>	
+		
+
+
+
+
+	<!-- JavaScript libs are placed at the end of the document so the pages load faster -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+	<script src="{{ url_for('static',filename='assets/js/headroom.min.js') }}"></script>
+	<script src="{{ url_for('static',filename='assets/js/jQuery.headroom.min.js') }}"></script>
+	<script src="{{ url_for('static',filename='assets/js/template.js') }}"></script>
+</body>
+</html>

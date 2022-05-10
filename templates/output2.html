@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport"    content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author"      content="Sergey Pozhilov (GetTemplate.com)">
+
+	<title>ALL CNN Classifier</title>
+
+	<link rel="shortcut icon" href="{{ url_for('static',filename='assets/images/gt_favicon.png') }}">
+
+	<link rel="stylesheet" media="screen" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
+	<link rel="stylesheet" href="{{ url_for('static',filename='assets/css/bootstrap.min.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static',filename='assets/css/font-awesome.min.css') }}">
+
+	<!-- Custom styles for our template -->
+	<link rel="stylesheet" href="{{ url_for('static',filename='assets/css/bootstrap-theme.css') }}" media="screen" >
+	<link rel="stylesheet" href="{{ url_for('static',filename='assets/css/main.css') }}">
+
+	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!--[if lt IE 9]>
+	<script src="{{ url_for('static',filename='assets/js/html5shiv.js') }}"></script>
+	<script src="{{ url_for('static',filename='assets/js/respond.min.js') }}"></script>
+	<![endif]-->
+</head>
+
+<body>
+	<!-- Fixed navbar -->
+	<div class="navbar navbar-inverse navbar-fixed-top headroom" >
+		<div class="container">
+			<div class="navbar-header">
+				<!-- Button for smallest screens -->
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+				<a class="navbar-brand" href="/"><img src="{{ url_for('static',filename='assets/images/logo.png') }}" alt="Trio logo"></a>
+			</div>
+			<div class="navbar-collapse collapse">
+				<ul class="nav navbar-nav pull-right">
+					<li><a href="/">Home</a></li>
+					<li><a href="/about">About</a></li>
+				</ul>
+			</div><!--/.nav-collapse -->
+		</div>
+	</div>
+
+	<!-- /.navbar -->
+	<header id="head">
+		<div class="container">
+			<div class="row">
+				<div>
+					<p>
+						{% with messages = get_flashed_messages() %}
+						  {% if messages %}
+							<ul>
+							{% for message in messages %}
+							<font size="+2">
+							  <li>{{ message }}</li>
+							</font>
+							{% endfor %}
+							</ul>
+						  {% endif %}
+						{% endwith %}
+					</p>
+					<embed src="{{ url_for('static',filename='Displayed/result_img.png') }}" width="100%" height="100%" style="border:none;"></embed>
+					<a class="btn btn-action btn-lg" role="button" href = "/">Go Back</a>
+				</div>
+			</div>
+		</div>
+	</header>
+
+
+
+	<!-- Social links. @TODO: replace by link/instructions in template -->
+	<section id="social">
+		<div class="container">
+			<div class="wrapper clearfix">
+				<!-- AddThis Button BEGIN -->
+				<div class="addthis_toolbox addthis_default_style">
+				<a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
+				<a class="addthis_button_tweet"></a>
+				<a class="addthis_button_linkedin_counter"></a>
+				<a class="addthis_button_google_plusone" g:plusone:size="medium"></a>
+				</div>
+				<!-- AddThis Button END -->
+			</div>
+		</div>
+	</section>
+	<!-- /social links -->
+
+
+	<footer id="footer" class="top-space">
+
+		<div class="footer1">
+			<div class="container">
+				<div class="row">
+
+					<div class="col-md-3 widget">
+						<h3 class="widget-title">Contact</h3>
+						<div class="widget-body">
+							<p>+92 311 5289656<br>
+								<a href="mailto:#">itsluqman55@gmail.com</a><br>
+								<br>
+								Sir Syed CASE Institute of Technology, B-17, Islamabad
+							</p>
+						</div>
+					</div>
+
+
+					<div class="col-md-6 widget">
+						<h3 class="widget-title">Trio</h3>
+						<div class="widget-body">
+							<p>A group of slackers with high goals and low exhaustion threshold. We're here to learn, outperform and showcase skills. To be the best, the most effecient and the most effective group ever.</p>
+							<p>It's still a long road to our success. See you on the other side!</p>
+						</div>
+					</div>
+
+				</div> <!-- /row of widgets -->
+			</div>
+		</div>
+
+		<div class="footer2">
+			<div class="container">
+				<div class="row">
+
+					<div class="col-md-6 widget">
+						<div class="widget-body">
+							<p class="simplenav">
+								<a href="#">Home</a> |
+								<a href="/about">About</a>
+							</p>
+						</div>
+					</div>
+
+					<div class="col-md-6 widget">
+						<div class="widget-body">
+							<p class="text-right">
+								Copyright &copy; 2021, Trio
+							</p>
+						</div>
+					</div>
+
+				</div> <!-- /row of widgets -->
+			</div>
+		</div>
+
+	</footer>
+
+
+
+
+
+	<!-- JavaScript libs are placed at the end of the document so the pages load faster -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+	<script src="{{ url_for('static',filename='assets/js/headroom.min.js') }}"></script>
+	<script src="{{ url_for('static',filename='assets/js/jQuery.headroom.min.js') }}"></script>
+	<script src="{{ url_for('static',filename='assets/js/template.js') }}"></script>
+
+</body>
+</html>
